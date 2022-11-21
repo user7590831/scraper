@@ -7,6 +7,7 @@ Feature requests and PR's are welcome.
 ## Planned
 
 - TikTok (https://www.tiktok.com)
+- Bunkr (https://bunkr.is)
 
 ## Supported sites
 
