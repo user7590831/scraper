@@ -6,6 +6,7 @@ Feature requests and PR's are welcome.
 
 ## Planned
 
+- Famigo (https://www.famigo.com)
 - TikTok (https://www.tiktok.com)
 - Bunkr (https://bunkr.is)
 - Fansly (https://fansly.com)
