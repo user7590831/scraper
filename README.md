@@ -33,3 +33,10 @@ npm run build
 ```bash
 npm start
 ```
+
+## Motivation
+
+- To not have to use different tools based on whether the content is NSFW or not
+- To know this project will be actively maintained as I develop and use it myself
+- To add features however I please
+- To learn scraping and stuff
