@@ -8,6 +8,7 @@ Feature requests and PR's are welcome.
 
 - TikTok (https://www.tiktok.com)
 - Bunkr (https://bunkr.is)
+- Fansly (https://fansly.com)
 - Scrape multiple links using a .txt file
 
 ## Supported sites
