@@ -16,8 +16,6 @@ const spinner = ora({
 //! Note: video scraping does not work
 const famigo = async (link: string) => {
   const browser = await puppeteer.launch({
-    headless: true,
-    dumpio: false,
     ignoreHTTPSErrors: true,
   });
   const page = await browser.newPage();
@@ -53,7 +51,7 @@ const famigo = async (link: string) => {
   for (const imageLink of imageLinks) {
     downloadedFilesCounter++;
 
-    const fileName = imageLink.split('/')[imageLink.split('/').length - 1];
+    const fileName = imageLink.split('/').pop();
 
     // If the file already exists, skip it.
     if (fs.existsSync(`${path}/${fileName}`)) continue;

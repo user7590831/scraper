@@ -1,6 +1,7 @@
 import inquirer from 'inquirer';
 import cyberdrop from './scrapers/cyberdrop/index.js';
 import famigo from './scrapers/famigo/index.js';
+import tiktok from './scrapers/tiktok/index.js';
 
 export const startInquirer = async () => {
   const { site } = await inquirer.prompt([
@@ -8,7 +9,7 @@ export const startInquirer = async () => {
       type: 'list',
       name: 'site',
       message: 'Select a site',
-      choices: ['CyberDrop', 'Famigo', 'Quit'],
+      choices: ['CyberDrop', 'Famigo', 'TikTok', 'Quit'],
     },
   ]);
 
@@ -39,6 +40,34 @@ export const startInquirer = async () => {
             },
           ])
         ).link
+      );
+      break;
+    case 'TikTok':
+      tiktok(
+        (
+          await inquirer.prompt<{
+            link: string;
+          }>([
+            {
+              name: 'link',
+              message: 'Paste the TikTok link',
+            },
+          ])
+        ).link,
+        (
+          await inquirer.prompt<{
+            watermark: string;
+          }>([
+            {
+              type: 'list',
+              name: 'watermark',
+              message: 'With watermark?',
+              choices: ['No', 'Yes'],
+            },
+          ])
+        ).watermark === 'Yes'
+          ? true
+          : false
       );
   }
 };

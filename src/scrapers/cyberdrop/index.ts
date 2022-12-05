@@ -5,7 +5,7 @@ import { writeFile } from 'node:fs/promises';
 import { ensureDir, getElementText } from '../../utils/index.js';
 import { startInquirer } from '../../index.js';
 
-const DOWNLOAD_URL = 'https://cyberdrop.me/';
+const BASE_URL = 'https://cyberdrop.me/';
 
 const spinner = ora({
   stream: process.stdout,
@@ -13,8 +13,6 @@ const spinner = ora({
 
 const cyberdrop = async (link: string) => {
   const browser = await puppeteer.launch({
-    headless: true,
-    dumpio: false,
     ignoreHTTPSErrors: true,
   });
   const page = await browser.newPage();
@@ -37,7 +35,7 @@ const cyberdrop = async (link: string) => {
   const path = `./downloads/CyberDrop/${title} (${identifier})`;
 
   spinner.text = `Found ${summary}. Starting download of album ${title} (${identifier})`;
-  await ensureDir(`./downloads/CyberDrop/${title} (${identifier})`);
+  await ensureDir(path);
 
   let downloadedFilesCounter = 0;
 
@@ -48,10 +46,10 @@ const cyberdrop = async (link: string) => {
 
     spinner.text = `Downloading file ${downloadedFilesCounter}/${totalFilesAmount}: ${fileName}`;
 
-    let link = `${DOWNLOAD_URL}${fileName}`;
+    let link = `${BASE_URL}${fileName}`;
 
     if (fileName.endsWith('.mp4')) {
-      await page.goto(`${DOWNLOAD_URL}${fileName}`);
+      await page.goto(`${BASE_URL}${fileName}`);
 
       link = await page.evaluate(() => document.querySelector('source').src);
     }

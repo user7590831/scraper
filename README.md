@@ -6,15 +6,19 @@ Feature requests and PR's are welcome.
 
 ## Planned
 
-- TikTok (https://www.tiktok.com)
 - Bunkr (https://bunkr.is)
 - Fansly (https://fansly.com)
 - Scrape multiple links using a .txt file
+- Famigo (https://famigo.com) video's
 
 ## Supported sites
 
 - CyberDrop (https://cyberdrop.me)
+  - Download all files from an album
 - Famigo (https://www.famigo.com)
+  - Download all public photos from a profile (no video's)
+- TikTok (https://www.tiktok.com)
+  - Download all videos from a user with or without watermark
 
 ## Requirements
 
