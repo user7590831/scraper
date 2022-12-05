@@ -8,7 +8,7 @@ export const getElementText = async (selector: string, page: Page) =>
   await page.$$eval(selector, (nodes) => nodes[0].textContent?.trim());
 
 export const scrollToBottom = async (page: Page, timeout: number) =>
-  await page.evaluate(async () => {
+  await page.evaluate(async (timeout) => {
     let scrollPosition = 0;
     let documentHeight = document.body.scrollHeight;
 
@@ -18,4 +18,4 @@ export const scrollToBottom = async (page: Page, timeout: number) =>
       scrollPosition = documentHeight;
       documentHeight = document.body.scrollHeight;
     }
-  });
+  }, timeout);
