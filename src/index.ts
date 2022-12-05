@@ -1,6 +1,6 @@
 import inquirer from 'inquirer';
-import cyberdrop from './cyberdrop.js';
-import famigo from './famigo.js';
+import cyberdrop from './scrapers/cyberdrop/index.js';
+import famigo from './scrapers/famigo/index.js';
 
 export const startInquirer = async () => {
   const { site } = await inquirer.prompt([

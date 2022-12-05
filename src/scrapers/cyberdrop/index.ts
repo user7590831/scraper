@@ -2,8 +2,8 @@ import fs from 'node:fs';
 import ora from 'ora';
 import puppeteer from 'puppeteer';
 import { writeFile } from 'node:fs/promises';
-import { ensureDir, getElementText } from './utils/index.js';
-import { startInquirer } from './index.js';
+import { ensureDir, getElementText } from '../../utils/index.js';
+import { startInquirer } from '../../index.js';
 
 const DOWNLOAD_URL = 'https://cyberdrop.me/';
 
