@@ -2,22 +2,22 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/inquirer': ^9.0.3
-  '@types/node': ^18.11.9
+  '@types/node': ^18.11.10
   inquirer: ^9.1.4
   ora: ^6.1.2
-  puppeteer: ^19.2.2
+  puppeteer: ^19.3.0
   ts-node: ^10.9.1
   typescript: ^4.9.3
 
 dependencies:
   inquirer: 9.1.4
   ora: 6.1.2
-  puppeteer: 19.2.2
+  puppeteer: 19.3.0
 
 devDependencies:
   '@types/inquirer': 9.0.3
-  '@types/node': 18.11.9
-  ts-node: 10.9.1_wup25etrarvlqkprac7h35hj7u
+  '@types/node': 18.11.10
+  ts-node: 10.9.1_eoe7put6ewfbqpy6gs36tihw6y
   typescript: 4.9.3
 
 packages:
@@ -89,8 +89,8 @@ packages:
       rxjs: 7.5.7
     dev: true
 
-  /@types/node/18.11.9:
-    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
+  /@types/node/18.11.10:
+    resolution: {integrity: sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==}
 
   /@types/parse-json/4.0.0:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -99,14 +99,14 @@ packages:
   /@types/through/0.0.30:
     resolution: {integrity: sha512-FvnCJljyxhPM3gkRgWmxmDZyAQSiBQQWLI0A0VFL0K7W1oRUrPJSqNO0NvTnLkBcotdlp3lKvaT0JrnyRDkzOg==}
     dependencies:
-      '@types/node': 18.11.9
+      '@types/node': 18.11.10
     dev: true
 
   /@types/yauzl/2.10.0:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 18.11.9
+      '@types/node': 18.11.10
     dev: false
     optional: true
 
@@ -636,8 +636,8 @@ packages:
       once: 1.4.0
     dev: false
 
-  /puppeteer-core/19.2.2:
-    resolution: {integrity: sha512-faojf+1pZ/tHXSr4x1q+9MVd9FrL3rpdbC0w7qN7MNClMoLuCvMbpR4vzcjoiJYgclt1n+SOPUOmHQViTw6frw==}
+  /puppeteer-core/19.3.0:
+    resolution: {integrity: sha512-P8VAAOBnBJo/7DKJnj1b0K9kZBF2D8lkdL94CjJ+DZKCp182LQqYemPI9omUSZkh4bgykzXjZhaVR1qtddTTQg==}
     engines: {node: '>=14.1.0'}
     dependencies:
       cross-fetch: 3.1.5
@@ -657,8 +657,8 @@ packages:
       - utf-8-validate
     dev: false
 
-  /puppeteer/19.2.2:
-    resolution: {integrity: sha512-m1T5Mog5qu5+dMBptWYTn6pXRdnFbydbVUCthqwbfd8/kOiMlzZBR9ywjX79LpvI1Sj+/z8+FKeIsjnMul8ZYA==}
+  /puppeteer/19.3.0:
+    resolution: {integrity: sha512-WJbi/ULaeuFOz7cfMgJlJCBAZiyqIFeQ6os4h5ex3PVTt2qosXgwI9eruFZqFAwJRv8x5pOuMhWR0aSRgyDqEg==}
     engines: {node: '>=14.1.0'}
     requiresBuild: true
     dependencies:
@@ -667,7 +667,7 @@ packages:
       https-proxy-agent: 5.0.1
       progress: 2.0.3
       proxy-from-env: 1.1.0
-      puppeteer-core: 19.2.2
+      puppeteer-core: 19.3.0
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -790,7 +790,7 @@ packages:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
 
-  /ts-node/10.9.1_wup25etrarvlqkprac7h35hj7u:
+  /ts-node/10.9.1_eoe7put6ewfbqpy6gs36tihw6y:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -809,7 +809,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.11.9
+      '@types/node': 18.11.10
       acorn: 8.8.1
       acorn-walk: 8.2.0
       arg: 4.1.3
