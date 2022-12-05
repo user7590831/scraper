@@ -6,7 +6,6 @@ Feature requests and PR's are welcome.
 
 ## Planned
 
-- Famigo (https://www.famigo.com)
 - TikTok (https://www.tiktok.com)
 - Bunkr (https://bunkr.is)
 - Fansly (https://fansly.com)
@@ -15,6 +14,7 @@ Feature requests and PR's are welcome.
 ## Supported sites
 
 - CyberDrop (https://cyberdrop.me)
+- Famigo (https://www.famigo.com)
 
 ## Requirements
 
@@ -34,10 +34,3 @@ npm run build
 ```bash
 npm start
 ```
-
-## Motivation
-
-- To not have to use different tools based on whether the content is NSFW or not
-- To know this project will be actively maintained as I develop and use it myself
-- To add features however I please
-- To learn scraping and stuff
