@@ -5,7 +5,7 @@ import { writeFile } from 'node:fs/promises';
 import { ensureDir, getElementText } from './utils/index.js';
 import { startInquirer } from './index.js';
 
-const DOWNLOAD_URL = 'https://cyberdrop.to/';
+const DOWNLOAD_URL = 'https://cyberdrop.me/';
 
 const spinner = ora({
   stream: process.stdout,
