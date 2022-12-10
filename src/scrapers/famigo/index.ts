@@ -34,8 +34,8 @@ const famigo = async (link: string) => {
     '.bravo-create-post .bravo-user-details > div',
     page
   );
-  const imageLinks = await page.evaluate(() =>
-    Array.from(document.getElementsByClassName('glightbox')).map((element) =>
+  const imageLinks = await page.$$eval('.glightbox', (elements) =>
+    elements.map((element) =>
       element.classList.contains('bravo-profile-image')
         ? (element as HTMLImageElement).src
         : (element as HTMLAnchorElement).href

@@ -27,10 +27,8 @@ const cyberdrop = async (link: string) => {
   const title = await getElementText('#title', page);
   const totalFilesAmount = await getElementText('#totalFilesAmount', page);
   const summary = await getElementText('#count', page);
-  const fileNames = await page.evaluate(() =>
-    Array.from(document.querySelectorAll('.image > img')).map((img) =>
-      img.getAttribute('alt')
-    )
+  const fileNames = await page.$$eval('.image > img', (images) =>
+    images.map((image) => image.getAttribute('alt'))
   );
   const path = `./downloads/CyberDrop/${title} (${identifier})`;
 

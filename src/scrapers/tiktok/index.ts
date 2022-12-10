@@ -41,10 +41,9 @@ const tiktok = async (link: string, watermark: boolean) => {
   const identifier = (
     await page.evaluate(() => window.location.pathname)
   ).substring(2);
-  const videoLinks = await page.evaluate(() =>
-    Array.from(document.querySelectorAll('[data-e2e="user-post-item"] a')).map(
-      (element) => (element as HTMLAnchorElement).href
-    )
+  const videoLinks = await page.$$eval(
+    '[data-e2e="user-post-item"] a',
+    (anchors) => anchors.map((anchor) => (anchor as HTMLAnchorElement).href)
   );
   const path = `./downloads/TikTok/${identifier}`;
 
